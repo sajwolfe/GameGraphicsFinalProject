@@ -3,7 +3,7 @@ Final group project for CMPM 163
 
 Overall Scene: We are planning on making an outdoor 3D scene in Unity. 
 
-Alex Covert - Smoke shader - campfire & C# programming
+Alex Covert - Smoke shader - campfire & C# programming for player flying around the scene
 
 Jordan - Caustics shader - river/lake/pool
 
