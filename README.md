@@ -1,15 +1,21 @@
 # GameGraphicsFinalProject
 Final group project for CMPM 163
 
-Alex Covert - Smoke shader - campfire
+Overall Scene: We are planning on making an outdoor 3D scene in Unity. 
+
+Alex Covert - Smoke shader - campfire & C# programming
 
 Jordan - Caustics shader - river/lake/pool
 
-Bob - 
+Bob - Fire particle system, modeling
 
-Alex Bradtke - 
+Alex Bradtke - cloud particle system, scene design
 
-Bryan - 
+Bryan - subsurface scattering with tree leaves 
 
-Sam - 
+Sam - ?
+
+
+Possibilities: 
+- clouds
 
