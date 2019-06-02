@@ -8,16 +8,16 @@ using UnityEngine;
 public class ApplySmokeShader : MonoBehaviour
 {
     //material
-    private Material mat;
+    [SerializeField] private Material mat;
 
     //textures
-    private Texture initialTex;
-    private RenderTexture tex;
+    [SerializeField] private Texture initialTex;
+    [SerializeField] private RenderTexture tex;
     private RenderTexture buffer;
 
     //timer
     private float lastUpdateTime = 0;
-    private float updateInterval = 0.1f;
+    [SerializeField] private float updateInterval;
 
     private void Start()
     {
@@ -37,6 +37,7 @@ public class ApplySmokeShader : MonoBehaviour
 
     public void UpdateTexture()
     {
+        Debug.Log("Update");
         Graphics.Blit(tex, buffer, mat);
         Graphics.Blit(buffer, tex);
     }
