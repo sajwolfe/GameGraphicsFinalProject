@@ -6,9 +6,10 @@ Shader "Alex/SmokeShader"
 	Properties
 	{
 		_MainTex("Texture", 2D) = "white" {}
-		_Pixels("Pixels", float) = 2048
-		_Dissipation("Dissipation", float) = 0.5
-		_Mininmum("Minimum", float) = 50
+		[HideInInspector] _Pixels("Pixels", float) = 512
+		[HideInInspector] _Dissipation("Dissipation", float) = 1
+		[HideInInspector] _Mininmum("Minimum", float) = 0.03
+		_Speed("Dispersion Speed", Range(0, 0.01)) = 0.001
 	}
 
 	SubShader
@@ -38,6 +39,7 @@ Shader "Alex/SmokeShader"
 			float _Pixels;
 			float _Dissipation;
 			float _Minimum;
+			float _Speed;
 
 			v2f vert(appdata v)
 			{
@@ -67,7 +69,7 @@ Shader "Alex/SmokeShader"
 					_Dissipation *
 					(
 						0.25 * (cl + tc + bc + cr)
-						- cc
+						- (1 + _Speed) * cc
 					);
 				
 				// minimum 

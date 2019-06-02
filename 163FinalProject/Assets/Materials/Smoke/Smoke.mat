@@ -72,6 +72,7 @@ Material:
     - _Pixels: 512
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 0.00255
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
