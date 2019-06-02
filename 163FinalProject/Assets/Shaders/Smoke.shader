@@ -1,6 +1,6 @@
 ﻿//alex
 //tutorial https://www.alanzucconi.com/2016/03/02/shaders-for-simulations/
-//
+//shader that slowly disperses smoke from alpha / white texture
 Shader "Alex/SmokeShader"
 {
 	Properties
@@ -56,11 +56,11 @@ Shader "Alex/SmokeShader"
 
 				// nearby cells
 				half s = 1 / _Pixels;
-				float cl = tex2D(_MainTex, uv + fixed2(-s, 0)).a; // Centre Left
-				float tc = tex2D(_MainTex, uv + fixed2(-0, -s)).a; // Top Centre
-				float cc = tex2D(_MainTex, uv + fixed2(0, 0)).a; // Centre Centre
-				float bc = tex2D(_MainTex, uv + fixed2(0, +s)).a; // Bottom Centre
-				float cr = tex2D(_MainTex, uv + fixed2(+s, 0)).a; // Centre Right
+				float cl = tex2D(_MainTex, uv + fixed2(-s, 0)).a;  // center left
+				float tc = tex2D(_MainTex, uv + fixed2(-0, -s)).a; // center top
+				float cc = tex2D(_MainTex, uv + fixed2(0, 0)).a;   // center center
+				float bc = tex2D(_MainTex, uv + fixed2(0, +s)).a;  // center bottom
+				float cr = tex2D(_MainTex, uv + fixed2(+s, 0)).a;  // center right
 
 				// diffusion
 				float factor =

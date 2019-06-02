@@ -9,6 +9,7 @@ public class ApplySmokeShader : MonoBehaviour
     [SerializeField] private Material mat;
 
     //textures
+    [SerializeField] private int texSize = 512;
     [SerializeField] private Texture initialTex;
     [SerializeField] private RenderTexture tex;
     private RenderTexture buffer;
@@ -25,7 +26,7 @@ public class ApplySmokeShader : MonoBehaviour
 
     private void Update()
     {
-        //timer for updating texture
+        //timer for updating texture for smoke dispersion
         timer += Time.deltaTime;
         if(timer > updateInterval)
         {
@@ -34,9 +35,17 @@ public class ApplySmokeShader : MonoBehaviour
         }
     }
 
-    public void UpdateTexture()
+    private void UpdateTexture()
     {
         Graphics.Blit(tex, buffer, mat);
         Graphics.Blit(buffer, tex);
+    }
+
+    //called to add new smoke to the quad
+    public void AddSmoke(Vector2 offset)
+    {
+        Graphics.SetRenderTarget(tex);
+        Graphics.DrawTexture(new Rect(offset.x, offset.y, texSize, texSize), initialTex);
+        Graphics.SetRenderTarget(null);
     }
 }
