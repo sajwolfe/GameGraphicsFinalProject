@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 //alex 
 //tutorial: https://www.alanzucconi.com/2016/03/02/shaders-for-simulations/
@@ -16,7 +14,7 @@ public class ApplySmokeShader : MonoBehaviour
     private RenderTexture buffer;
 
     //timer
-    private float lastUpdateTime = 0;
+    private float timer = 0;
     [SerializeField] private float updateInterval;
 
     private void Start()
@@ -27,17 +25,17 @@ public class ApplySmokeShader : MonoBehaviour
 
     private void Update()
     {
-        //redo this with time.deltatime?
-        if(Time.time > lastUpdateTime + updateInterval)
+        //timer for updating texture
+        timer += Time.deltaTime;
+        if(timer > updateInterval)
         {
             UpdateTexture();
-            lastUpdateTime = Time.time;
+            timer = 0;
         }
     }
 
     public void UpdateTexture()
     {
-        Debug.Log("Update");
         Graphics.Blit(tex, buffer, mat);
         Graphics.Blit(buffer, tex);
     }
