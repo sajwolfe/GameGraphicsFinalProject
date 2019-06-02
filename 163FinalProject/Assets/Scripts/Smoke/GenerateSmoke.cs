@@ -6,7 +6,8 @@
 [RequireComponent(typeof(ApplySmokeShader))]
 public class GenerateSmoke : MonoBehaviour
 {
-    [SerializeField] [Range(0, 512)] private Vector2 offset;
+    [SerializeField] [Range(0, 512)] private float offsetX;
+    [SerializeField] [Range(0, 512)] private float offsetY;
 
     private ApplySmokeShader applySmokeShader;
 
@@ -18,6 +19,7 @@ public class GenerateSmoke : MonoBehaviour
     [ContextMenu("Spawn Smoke")]
     public void SpawnSmoke()
     {
+        Vector3 offset = new Vector3(offsetX, offsetY);
         applySmokeShader.AddSmoke(offset);
     }
 }
