@@ -298,7 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: dc5cbf498703df74a887746bc7c741fd, type: 2}
   texSize: 512
-  initialTex: {fileID: 2800000, guid: b32e76adc01ad93478bf66ed4cfbe730, type: 3}
+  initialTex: {fileID: 2800000, guid: 53252dd7a616cb44dac7c465dc3f8fb8, type: 3}
   tex: {fileID: 8400000, guid: 57d584e9b1d22ea42a8a03804e0053f3, type: 2}
   updateInterval: 0
 --- !u!64 &2046082652
@@ -386,5 +386,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d481582bfb0a345ad7b69b4fe2d6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0
+  generateTime: 0.05

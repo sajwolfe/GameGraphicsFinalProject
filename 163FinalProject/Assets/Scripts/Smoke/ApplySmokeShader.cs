@@ -45,7 +45,7 @@ public class ApplySmokeShader : MonoBehaviour
     public void AddSmoke(Vector2 offset)
     {
         Graphics.SetRenderTarget(tex);
-        Graphics.DrawTexture(new Rect(offset.x, offset.y, texSize, texSize), initialTex);
+        Graphics.DrawTexture(new Rect(offset.x, offset.y, 300, 300), initialTex);
         Graphics.SetRenderTarget(null);
     }
 }
