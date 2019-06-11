@@ -1,9 +1,9 @@
 # GameGraphicsFinalProject
 Final group project for CMPM 163
 
-Overall Scene: We are planning on making an outdoor 3D scene in Unity. 
+Our overall project aims to create an outdoor 3D scene in Unity using HLSL shaders, particle systems, and various models and textures.
 
-Alex Covert - Smoke shader - campfire & C# programming for player flying around the scene
+Alex Covert - I worked mostly on the smoke and fog in the scene, based largely off of the following tutorials: https://twitter.com/roystanhonks/status/990755998280265728?lang=en (fog) and https://www.alanzucconi.com/2016/03/02/shaders-for-simulations/ (smoke). Both are created with a combination of shader code and C# code. I also worked on creating a first-person camera prefab that moves with keys & the mouse.
 
 Jordan - Caustics shader - river/lake/pool
 
