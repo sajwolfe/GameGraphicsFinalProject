@@ -5,6 +5,10 @@
 //
 public class ApplySmokeShader : MonoBehaviour
 {
+
+    //main camera
+    [SerializeField] private GameObject mainCamera;
+
     //material
     [SerializeField] private Material mat;
 
@@ -33,6 +37,9 @@ public class ApplySmokeShader : MonoBehaviour
             UpdateTexture();
             timer = 0;
         }
+
+        //rotate to face camera
+        if(mainCamera != null) transform.LookAt(mainCamera.transform);
     }
 
     private void UpdateTexture()
