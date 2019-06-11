@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-//alex 
+//alex c
 //tutorial: https://www.alanzucconi.com/2016/03/02/shaders-for-simulations/
 //
 public class ApplySmokeShader : MonoBehaviour

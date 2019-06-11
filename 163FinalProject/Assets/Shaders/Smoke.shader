@@ -1,4 +1,4 @@
-﻿//alex
+﻿//alex c
 //tutorial https://www.alanzucconi.com/2016/03/02/shaders-for-simulations/
 //shader that slowly disperses smoke from alpha / white texture
 Shader "Alex/SmokeShader"
