@@ -5,7 +5,6 @@ Shader "Alex/Fog"
 	Properties
 	{
 		_Color("Color", Color) = (1,1,1,1)
-		_FadeThreshold("Fade Threshold", Float) = 1
 		[HideInInspector] _DisplacementTex("-", 2D) = "black" {}
 		[HideInInspector] _Size("-", Float) = 0
 		[HideInInspector] _MaxDisplacement("-", Float) = 1
@@ -66,10 +65,6 @@ Shader "Alex/Fog"
 			}
 
 			float4 _Color;
-			float _FadeThreshold;
-			float _EdgeNoiseScrollSpeed;
-
-			UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
 
 			fixed4 frag(v2f i) : SV_Target
 			{
