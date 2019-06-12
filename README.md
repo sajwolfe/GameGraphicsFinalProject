@@ -13,9 +13,5 @@ Alex Bradtke - cloud particle system, scene design
 
 Bryan - subsurface scattering with tree leaves 
 
-Sam - ?
-
-
-Possibilities: 
-- clouds
+Sam - water
 
