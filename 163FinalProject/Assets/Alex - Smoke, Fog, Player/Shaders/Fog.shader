@@ -73,20 +73,7 @@ Shader "Alex/Fog"
 
 			fixed4 frag(v2f i) : SV_Target
 			{
-				// Sample the depth of any pixels behind this one
-				float occludedDepth = tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)).r;
-				float occludedDepthLinear = LinearEyeDepth(occludedDepth);
-
-				// Calculate the distance between this pixel and the one behind it
-				float difference = occludedDepthLinear - i.projPos.w;
-				float normalizedDifference = saturate(difference / _FadeThreshold);
-
-				float threshold = smoothstep(0, 1, normalizedDifference);
-
-				float4 output = _Color;
-				output.a *= threshold;
-
-				return output;
+				return _Color;
 			}
 			ENDCG
 		}
