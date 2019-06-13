@@ -68,18 +68,18 @@ Material:
     - _BumpScale: 1
     - _CausticSpeed: 18.76
     - _Cutoff: 0.5
-    - _DepthBlend: 81.2
+    - _DepthBlend: 100
     - _DetailNormalMapScale: 1
     - _Distance: 159.4
-    - _DistanceBlend: 409
+    - _DistanceBlend: 500
     - _DistortionSpeed: 1
     - _DstBlend: 0
-    - _EdgeBlend: 2.5
+    - _EdgeBlend: 100
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 16.5
-    - _LOD: 82.5
+    - _Height: -69.8
+    - _LOD: 100
     - _Metallic: 0
     - _Mode: 0
     - _Multiply: 1.929
