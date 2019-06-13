@@ -75,5 +75,11 @@ public class MoveCamera : MonoBehaviour
         {
             speed = moveSpeed;
         }
+
+        //quit build
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
