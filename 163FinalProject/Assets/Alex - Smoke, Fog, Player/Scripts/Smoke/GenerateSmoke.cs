@@ -16,18 +16,18 @@ public class GenerateSmoke : MonoBehaviour
     {
         applySmokeShader = GetComponent<ApplySmokeShader>();
     }
-
-    private void Update()
+    
+    private void OnGUI()
     {
         timer += Time.deltaTime;
-        if(timer >= generateTime)
+        if (timer >= generateTime)
         {
-            Vector3 offset = new Vector3(Random.Range(0, 300), Random.Range(256, 1000));
+            Vector3 offset = new Vector3(Random.Range(0, 1000), Random.Range(256, 1000));
             applySmokeShader.AddSmoke(offset);
-
             timer = 0;
         }
-        
     }
+
+
 
 }

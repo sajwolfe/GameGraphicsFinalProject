@@ -39,7 +39,8 @@ public class ApplySmokeShader : MonoBehaviour
         }
 
         //rotate to face camera
-        if(mainCamera != null) transform.LookAt(mainCamera.transform);
+        if (mainCamera != null) transform.LookAt(mainCamera.transform);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
 
     private void UpdateTexture()
