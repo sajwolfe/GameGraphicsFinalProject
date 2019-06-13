@@ -11,7 +11,7 @@ Bob - Fire particle system, modeling
 
 Alex Bradtke - cloud particle system, scene design
 
-Bryan - subsurface scattering with tree leaves 
+Bryan - I worked on the Subsurface Scattering effect implemented on the tree leaves, based on this tutorial: https://www.alanzucconi.com/2017/08/30/fast-subsurface-scattering-1/. Originally I planned to write the shader as a vertex/frag shader, but after some difficulty with light attentuation, I switched over to a surface shader.
 
 Sam - water
 
