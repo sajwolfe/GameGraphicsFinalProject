@@ -18,7 +18,6 @@ Alex Covert - I worked mostly on the smoke and fog in the scene, based largely o
 
 
 Bryan - I worked on the Subsurface Scattering effect implemented on the tree leaves, based on this tutorial: https://www.alanzucconi.com/2017/08/30/fast-subsurface-scattering-1/. Originally I planned to write the shader as a vertex/frag shader, but after some difficulty with light attentuation, I switched over to a surface shader.
-Solo GitHub Repo: https://github.com/BryanArvizu/CMPM163_Subsurface
 
 
 Bob - Fire particle system, modeling - My roles are to complete the outdooe scene for my team members to represent their special effects and to build the fire particle system. The fire particle system is based largely off of the tutorial:
@@ -31,5 +30,5 @@ Sam - water reflection
 Jordan - Caustics shader 
 
 
-Alex Bradtke - cloud particle system, scene design
+Alex Bradtke - cloud particle system, scene design - My role was to help create the the outdoor scene to show off everyones part(s) and attempt to highlight them and create clouds using the particle systems. The cloud particle system was based off of the tutorial: https://www.youtube.com/watch?v=F8conwqx2kY. I used a combination of effects from the options on the particle menu off of a texture image.
 
