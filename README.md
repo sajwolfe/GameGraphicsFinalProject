@@ -11,7 +11,8 @@ Sam - water
 
 Jordan - Caustics shader - river/lake/pool
 
-Bob - Fire particle system, modeling
+Bob - Fire particle system, modeling - My roles are to complete the outdooe scene for my team members to represent their special effects and to build the fire particle system. The fire particle system is based largely off of the tutorial:
+https://www.youtube.com/watch?v=5Mw6NpSEb2o&t=319s and https://www.raywenderlich.com/138-introduction-to-unity-particle-systems. The Unity scene is created with help from Alex Bradtke. 
 
 Alex Bradtke - cloud particle system, scene design
 
