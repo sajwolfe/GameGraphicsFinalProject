@@ -2,7 +2,7 @@
 Final group project for CMPM 163
 
 Our overall project aims to create an outdoor 3D scene in Unity using HLSL shaders, particle systems, and various models and textures.
-The downloadable build of our project is at the following link, as well as inside this repository: https://alexcovert.itch.io/game-graphics-final-project. 
+The downloadable build of our project is at the following link, as well as inside this repository: https://alexcovert.itch.io/game-graphics-final-project. Our video is here: https://www.youtube.com/watch?v=1-E-ema4nxQ&feature=youtu.be
 
 BUILD CONTROLS:
 WASD to move around
