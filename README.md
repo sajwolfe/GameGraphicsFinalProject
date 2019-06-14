@@ -15,7 +15,7 @@ Alex Covert - I worked mostly on the smoke and fog in the scene, based largely o
 Bryan - I worked on the Subsurface Scattering effect implemented on the tree leaves, based on this tutorial: https://www.alanzucconi.com/2017/08/30/fast-subsurface-scattering-1/. Originally I planned to write the shader as a vertex/frag shader, but after some difficulty with light attentuation, I switched over to a surface shader.
 
 Bob - Fire particle system, modeling - My roles are to complete the outdooe scene for my team members to represent their special effects and to build the fire particle system. The fire particle system is based largely off of the tutorial:
-https://www.youtube.com/watch?v=5Mw6NpSEb2o&t=319s and https://www.raywenderlich.com/138-introduction-to-unity-particle-systems. The Unity scene is created with help from Alex Bradtke. 
+https://www.youtube.com/watch?v=5Mw6NpSEb2o&t=319s and https://www.raywenderlich.com/138-introduction-to-unity-particle-systems. The Unity scene is created with help from Alex Bradtke. I also recorded and edited the project video.
 
 Sam - water reflection
 
