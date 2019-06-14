@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=5Mw6NpSEb2o&t=319s and https://www.raywenderlich
 Sam - water reflection
 
 
-Jordan - Caustics shader 
+Jordan - Created water caustics using Chris Cunningham's shader: https://www.patreon.com/posts/21987965 This iteration uses a noise texture to distort the caustics over time for a realistic effect instead of animating an array of textures. I researched other, more complex implementations such as ray tracing or using a mesh's vertices as a light source, but found them too far outside my current skillset to use. I managed the settings for the caustics to fit the scene accordingly.
 
 
 Alex Bradtke - cloud particle system, scene design - My role was to help create the the outdoor scene to show off everyones part(s) and attempt to highlight them and create clouds using the particle systems. The cloud particle system was based off of the tutorial: https://www.youtube.com/watch?v=F8conwqx2kY. I used a combination of effects from the options on the particle menu off of a texture image.
