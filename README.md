@@ -32,6 +32,6 @@ Jordan - Created water caustics using Chris Cunningham's shader: https://www.pat
 Alex Bradtke - cloud particle system, scene design - My role was to help create the the outdoor scene to show off everyones part(s) and attempt to highlight them and create clouds using the particle systems. The cloud particle system was based off of the tutorial: https://www.youtube.com/watch?v=F8conwqx2kY. I used a combination of effects from the options on the particle menu off of a texture image.
 
 
-Sam - water reflection
+Sam - Skybox and Water Reflection + Speculation - My role in this project was to integrate a skybox into our Unity scene in order to give it a more polished feel, as well as give the water object relective properties that sample the water's surroundings, the skybox, and all light sources. Sourced mainly from Unity's documentation on Reflection Probes: https://docs.unity3d.com/Manual/UsingReflectionProbes.html
 
 
